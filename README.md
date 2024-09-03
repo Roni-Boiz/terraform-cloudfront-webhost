@@ -2,7 +2,7 @@
 
 This project automates the deployment of a static website on AWS using CloudFront, S3, Route 53 for DNS management, SSL certificate for secure connections, and Terraform for infrastructure as code.
 
-image
+image![arch](https://github.com/user-attachments/assets/a3c1425f-e23d-4730-99c4-c54ae2282a97)
 
 ## Steps to deploy application
 1. Create AWS [IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
@@ -32,14 +32,14 @@ image
 8. Deploy the project<br>
     `$ terraform apply -auto-approve`<br>
     
-    image
+    ![tf-apply](https://github.com/user-attachments/assets/a3a4554f-36ce-44a5-aa64-6c172b19d314)
 
     > Outputs:<br>
     cloudfront_distribution_domain_name = "d3czqno9gzt2xt.cloudfront.net"
 
 9. Open the browser and enter the website endpoint in address bar (Eg: `d3czqno9gzt2xt.cloudfront.net`)
 
-    image
+    ![app](https://github.com/user-attachments/assets/a8a253eb-3dcf-4c00-81da-0a3b9b92a69f)
 
 10. Destroy the project<br>
     `$ terraform destroy -auto-approve`
