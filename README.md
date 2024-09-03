@@ -2,7 +2,7 @@
 
 This project automates the deployment of a static website on AWS using CloudFront, S3, Route 53 for DNS management, SSL certificate for secure connections, and Terraform for infrastructure as code.
 
-image![arch](https://github.com/user-attachments/assets/a3c1425f-e23d-4730-99c4-c54ae2282a97)
+![arch](https://github.com/user-attachments/assets/a3c1425f-e23d-4730-99c4-c54ae2282a97)
 
 ## Steps to deploy application
 1. Create AWS [IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
