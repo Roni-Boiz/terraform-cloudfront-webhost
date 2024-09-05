@@ -27,9 +27,12 @@ This project automates the deployment of a static website on AWS using CloudFron
 6. Initialize the project <br>
     `$ terraform init`
 
-7. Update bucket name, domain name (optional), hosted zone (optional), certificate arn (optional)  in `variables.tf` (bucketname should be globally unique)
+7. Plan the resouces need to create <br>
+    `$ terraform plan`
 
-8. Deploy the project<br>
+8. Update bucket name, domain name (optional), hosted zone (optional), certificate arn (optional)  in `variables.tf` (bucketname should be globally unique)
+
+9. Deploy the project<br>
     `$ terraform apply -auto-approve`<br>
     
     ![tf-apply](https://github.com/user-attachments/assets/a3a4554f-36ce-44a5-aa64-6c172b19d314)
@@ -37,11 +40,11 @@ This project automates the deployment of a static website on AWS using CloudFron
     > Outputs:<br>
     cloudfront_distribution_domain_name = "d3czqno9gzt2xt.cloudfront.net"
 
-9. Open the browser and enter the website endpoint in address bar (Eg: `d3czqno9gzt2xt.cloudfront.net`)
+10. Open the browser and enter the website endpoint in address bar (Eg: `d3czqno9gzt2xt.cloudfront.net`)
 
     ![app](https://github.com/user-attachments/assets/a8a253eb-3dcf-4c00-81da-0a3b9b92a69f)
 
-10. Destroy the project<br>
+11. Destroy the project<br>
     `$ terraform destroy -auto-approve`
 
     **Check everything is cleaned up and destroyed**
